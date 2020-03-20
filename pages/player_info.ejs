@@ -7,7 +7,7 @@
 				<div class="card">
 				<!-- TODO: Modify the ejs code below, to conditionally set the image_src to be from our chosen player -->
 				  <%
-				  var image_src = '../resources/img/helmet.jpg';
+				  if(result_1) {var image_src = result_1.img_src;}
 
 				  %>
 				 <img class="card-img-top" id="player_img" src= "<%- image_src %>" alt="Image of Football Player">
